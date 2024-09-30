@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExercicioListaEstatica/ExercicioListaEstatica.iml" filepath="$PROJECT_DIR$/ExercicioListaEstatica/ExercicioListaEstatica.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lista/Lista.iml" filepath="$PROJECT_DIR$/Lista/Lista.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pilha/Pilha.iml" filepath="$PROJECT_DIR$/Pilha/Pilha.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/estruturas_dados.iml" filepath="$PROJECT_DIR$/.idea/estruturas_dados.iml" />

@@ -1,12 +1,10 @@
-interface Empilhavel {
-    //metodos principais
-    fun empilhar(dado: Any)
-    fun desempilhar(): Any?
+interface Empilhavel<T> {
+    fun empilhar(dado: T)
+    fun desempilhar(): T?
+    fun espiar(): T?
+    fun atualizar(dado: T)
 
-    //metodos auxiliares
     fun estaCheia(): Boolean
     fun estaVazia(): Boolean
     fun imprimir(): String
-    fun atualizar(dado: Any?)
 }
-//Any representa qualquer tipo de objeto

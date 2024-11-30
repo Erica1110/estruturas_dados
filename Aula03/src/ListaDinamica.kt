@@ -58,8 +58,8 @@ class ListaDinamica(val tamanha: Int) : Listavel {
     }
 
     override fun limpar() {
-        inicio = null
-        fim = null
+        ponteiroInicio = null
+        ponteiroFim = null
         quantidade = 0
     }
 

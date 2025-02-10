@@ -4,33 +4,36 @@ class ArvoreBinariaPesquisa : Arborizavel {
     var raiz: NoTriplo? = null
 
     override fun inserir(dado: Any?) {
-        if(raiz?.dado == null) {
+        if (raiz?.dado == null) {
             raiz?.dado = dado
         } else {
             val novoNo = NoTriplo(dado)
             var aux = raiz
-            while (aux != null){
+            while (aux != null) {
                 if ((aux.dado as Int) < (dado as Int)) {
-                    if (aux.direita != null){
+                    if (aux.direita != null) {
                         aux = aux.direita
                     } else {
                         aux.direita = novoNo
                         novoNo.genitor = aux
                     }
                 } else {
-                    if (aux.esquerda != null){
+                    if (aux.esquerda != null) {
                         aux = aux.esquerda
                     } else {
                         aux.esquerda = novoNo
                         novoNo.genitor = aux
                     }
                 }
-            }
-        }
+            }
+        }
     }
 
-    override fun apagar(dado: Any?): Boolean {
-        
+    override fun apagar(dado: Any?): NoTriplo? {
+        val no = buscar(dado)
+        if(no.esquerda "= null && no.direita != null)
+            apagarDoisFilhos()
+        if(no.esquerda == null &&)
     }
 
     override fun limpar() {
